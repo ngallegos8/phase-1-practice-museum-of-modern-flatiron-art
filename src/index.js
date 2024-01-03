@@ -36,6 +36,8 @@ function showDetails(exhibitsData) {
     const detailTickets = document.querySelector('#tickets-bought')
     detailTickets.textContent = `${currentItem.tickets_bought} tickets bought`
 
+    
+
     // const detailComments = document.querySelector('#comments-section')
     // detailComments.textContent = currentItem.comments
 
@@ -77,10 +79,8 @@ function buyTickets () {
         currentItem.tickets_bought =+ 1
         console.log(currentItem)
         showDetails(currentItem)
-        // e.targer.reset() //don't need because not an input button
+        // e.target.reset() //don't need because not an input button
     })
-
-
 }
 
 
